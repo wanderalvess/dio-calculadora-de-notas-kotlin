@@ -6,13 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/nota1"
+        android:layout_width="173dp"
+        android:layout_height="57dp"
+        android:background="@android:color/darker_gray"
+        android:hint="1° Nota"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <EditText
+        android:id="@+id/nota2"
+        android:layout_width="173dp"
+        android:layout_height="57dp"
+        android:background="@android:color/darker_gray"
+        android:hint="2° Nota"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nota1"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <EditText
+        android:id="@+id/faltas"
+        android:layout_width="173dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="236dp"
+        android:background="@android:color/darker_gray"
+        android:hint="Faltas"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nota2"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="193dp"
+        android:layout_height="84dp"
+        android:layout_margin="20dp"
+        android:text="@string/Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faltas"
+        app:layout_constraintVertical_bias="0.084" />
+
     <TextView
+        android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:gravity="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcular"
+        app:layout_constraintVertical_bias="0.465" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
